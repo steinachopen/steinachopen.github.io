@@ -29,11 +29,11 @@
     <span class="icon icon-home"></span>
     <span class="tab-label">Home</span>
   </a>
-  <a class="tab-item" href="timetable.htm">
+  <a class="tab-item active" href="timetable.htm">
     <span class="icon icon-bars"></span>
     <span class="tab-label">Timetable</span>
   </a>
-  <a class="tab-item active" href="map.htm">
+  <a class="tab-item" href="map.htm">
     <span class="icon icon-pages"></span>
     <span class="tab-label">Map</span>
   </a>
@@ -45,8 +45,20 @@
 
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
-      <img src="map.png" style="width: 100%"></img>
-    </div>
+	<br>
+      <div class="segmented-control">
+		<a class="control-item active" href="#item1mobile">
+			Freitag
+		</a>
+		<a class="control-item" href="#item2mobile">
+			Samstag
+		</a>
+		</div>
+		<div class="card">
+			<span id="item1mobile" class="control-content active">Item 1</span>
+			<span id="item2mobile" class="control-content">Item 2</span>
+		</div>
+	</div>
 
   </body>
 </html>
